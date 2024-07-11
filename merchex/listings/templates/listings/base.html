@@ -1,0 +1,16 @@
+#templates/listings/base.html
+
+{% load static %}
+<html>
+    <head><title>Merchex</title></head>
+    <link rel="stylesheet" href="{% static 'listings/styles.css' %}" />
+    <body>
+
+        <nav>
+          <a href="{% url 'band-list' %}">Groupes</a>
+        </nav>
+     
+        {% block content %}{% endblock %}
+     
+    </body>
+</html>
